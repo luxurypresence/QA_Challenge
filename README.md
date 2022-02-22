@@ -32,9 +32,9 @@ Open website https://www.pokemon.com/us and:
 
 ## :rotating_light: Steps for QA
 
-The candidate needs to do a Fork of the project
-He will fork this project
-He will commit his updates for his fork
-he will send a PR for this repository
+The candidate needs to do a Fork of the project </br>
+He will fork this project </br>
+He will commit his updates for his fork </br>
+he will send a PR for this repository </br>
 
 
