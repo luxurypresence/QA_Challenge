@@ -26,7 +26,15 @@ Open website https://www.pokemon.com/us and:
 ## :rotating_light: What the project have to do? 
 
 - In the final of the run all tests, the project need to create a report </br>
-- The project need to run on CI/CD - Circle CI or GitHub Actions </br>
+- The project need to run with CI/CD - Circle CI or GitHub Actions </br>
+- On Dashboard, the tests will need to create video records
 
+
+## :rotating_light: Steps for QA
+
+The candidate needs to do a Fork of the project
+He will fork this project
+He will commit his updates for his fork
+he will send a PR for this repository
 
 
