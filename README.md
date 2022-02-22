@@ -5,8 +5,8 @@ Project for QA challange
 Libs ans Tools:
 
 - Cypress
-- Dashboard
-- GitHubs Actions
+- Report Cypress Dashboard
+- CI/CD - Circle CI or GitHub Actions
 
 
 ## 🎯 UI Automation Test
@@ -26,7 +26,7 @@ Open website https://www.pokemon.com/us and:
 ## :rotating_light: What the project have to do? 
 
 - In the final of the run all tests, the project need to create a report </br>
-- The project need to run on CI/CD - Cypress Dashboard or GitHub Actions </br>
+- The project need to run on CI/CD - Circle CI or GitHub Actions </br>
 
 
 
