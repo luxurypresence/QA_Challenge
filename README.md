@@ -4,7 +4,7 @@ Project for QA challenge
 
 Libs ans Tools:
 - Cypress
-- Cypress Dashboard (Analytics)
+- Reporting Tool
 - CI/CD - Circle CI or GitHub Actions
 
 
@@ -26,9 +26,8 @@ Task 2 - Create a scenario and check data results </br>
 
 ## :rotating_light: What should the project consist of? 
 
-- In the final run of all tests, a collective summary of reports should display results </br>
-- The project will need to run with CI/CD - Circle CI or GitHub Actions </br>
-- On Cypress Dashboard, the tests should be configured to create video records </br>
+- The project should be configurable to CI/CD </br>
+- In the final run of all tests, a collective summary of results are found on the Reporting Dashboard </br>
 
 
 ## :rotating_light: Steps for QA
@@ -36,4 +35,5 @@ Task 2 - Create a scenario and check data results </br>
 The candidate will need to:
 1. Fork the project </br>
 2. Commit their updates to their fork </br>
-3. Send a PR for this repository </br>
+3. Send a PR for this repository (including .yml file) </br>
+4. Include link to Public Reporting Tool (Cypress Dashboard preferred)
