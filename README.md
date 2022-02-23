@@ -2,7 +2,7 @@
 
 Project for QA challenge 
 
-Libs ans Tools:
+Suggested Libs and Tools:
 - Cypress
 - Reporting Tool
 - CI/CD - Circle CI or GitHub Actions
