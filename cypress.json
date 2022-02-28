@@ -1,0 +1,19 @@
+{
+  "baseUrl": "https://www.pokemon.com/us/",
+  "chromeWebSecurity": false,
+  "integrationFolder": "cypress/integration",
+  "hideXHR": true,
+  "defaultCommandTimeout": 5000,
+  "viewportWidth": 1368,
+  "viewportHeight": 912,
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "Luxury Presence",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  },
+  "video": true,
+  "projectId": "m4yo28"
+}
