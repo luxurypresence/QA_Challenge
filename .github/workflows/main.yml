@@ -16,3 +16,8 @@ jobs:
           browser: chrome
           headless: true
           record: true
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: 858504f0-f2d0-4f97-9991-352e25e9bc98
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
