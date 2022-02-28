@@ -8,12 +8,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
+      - name: Cypress.io
+        uses: cypress-io/github-action@v2.9.7
+
         with:
+          start: npm start
           browser: chrome
           headless: true
           record: true
-        env:
-          CYPRESS_RECORD_KEY: 858504f0-f2d0-4f97-9991-352e25e9bc98
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
