@@ -1,0 +1,27 @@
+{
+  "name": "qa_challenge",
+  "version": "1.0.0",
+  "description": "QA Challenge for Luxury Presence",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "cypress:open": "cypress open",
+    "test": "cypress run --record --key 858504f0-f2d0-4f97-9991-352e25e9bc98"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stffns/QA_Challenge.git"
+  },
+  "author": "Jayson Steffens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stffns/QA_Challenge/issues"
+  },
+  "homepage": "https://github.com/stffns/QA_Challenge#readme",
+  "devDependencies": {
+    "cypress": "^9.5.0",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^7.1.0"
+  }
+}
