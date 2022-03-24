@@ -26,7 +26,11 @@ Task 3 - Create a scenario and check data results </br>
 Task 4 - Create an scenario that simulate create a new pokemon </br>
 Task 5 - Create an scenario that simulate create a login in a API : check if the create was successfull </br>
 Task 6 - Create an scenario that simulate edit a login in a API : create a new scenario that check if the access was denied </br>
+Task 7 - Create two requests on Pokemon API with two pokemons that you wish to choose, comparer results: 
+         Create a scenario where data result is the same (e.g. power of the pokemon)
+         Create a scenario where data result is not the same  (e.g. name of the pokemon)
 
+ 
 ## 🎯 Contract Test 
 Task 1 - Create a contract test and check if results was ok</br>
 Task 2 - Create a contract test and check if results was not ok</br>
