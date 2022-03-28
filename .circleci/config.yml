@@ -2,13 +2,19 @@ version: 2.1
 orbs:
   # Updated
   cypress: cypress-io/cypress@1
-  node: circleci/node@5.0.1
 workflows:
   build:
     jobs:
       - cypress/run:
           record: true
-steps:
-  - node/test:consumer
-  - node/publish:pact
-  - node/test:provider
+          
+build:
+  docker:
+    - image: circleci/node:latest
+  steps:
+    - checkout
+    - npm install
+    - npm run test:consumer
+    - npm run publish:pact
+    - npm run publish:pact
+    - npm run test:provider
