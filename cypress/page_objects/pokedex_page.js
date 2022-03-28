@@ -14,7 +14,7 @@ class PokedexPage{
     // Locator Functions
     set_search_field(text){
         this.visit();
-        this.page_elements.search_bar_field().type(text);
+        this.page_elements.search_bar_field().focus().type(text);
     }
 
     click_search_button(){
@@ -48,7 +48,6 @@ class PokedexPage{
     visit(){
         cy.url().then(($url) => {
             if(!$url.includes(this.page_elements.page_url)) {
-                cy.log("Yes")
                 cy.visit(this.page_elements.page_url)
             }
         });
