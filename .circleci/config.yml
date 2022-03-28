@@ -1,17 +1,9 @@
 version: 2.1
 orbs:
+  # Updated
   cypress: cypress-io/cypress@1
-jobs:
-  release:
-    executor: cypress/base-10
-    steps:
-      - run: npm run test:consumer
 workflows:
   build:
     jobs:
-      - cypress/install
       - cypress/run:
           record: true
-      - release:
-          requires:
-            - cypress/run
