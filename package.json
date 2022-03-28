@@ -4,7 +4,6 @@
   "description": "qa automation challange",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "test:consumer": "jest QA_Challenge/consumer_contract_tests/consumer.spec.js",
     "publish:pact": "pact-broker publish ./pacts --consumer-app-version 1.0 --broker-base-url https://chriswilm.pactflow.io --broker-token 5jxvOt6H-341zt89CgT7-w",
