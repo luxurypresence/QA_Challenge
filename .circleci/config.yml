@@ -6,5 +6,4 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          command: npm run test:consumer
           record: true
