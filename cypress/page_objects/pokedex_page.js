@@ -8,13 +8,14 @@ class PokedexPage{
         sort_dropdown_field: () => cy.get('.push-1 .custom-select-menu'),
         selector_dropdown_options_by_name: (option_name) => cy.get(`.custom-select-wrapper .custom-select-menu [data-option-value="${option_name}"]`),
         load_more_pokemon_button: () => cy.get('#loadMore>.button-lightblue'),
-        pokemon_icon_by_name: (pokemon_name) => cy.get(`[href='/us/pokedex/${pokemon_name.toLowerCase()}']`)
+        pokemon_icon_by_name: (pokemon_name) => cy.get(`[href='/us/pokedex/${pokemon_name.toLowerCase()}']`),
+        results_container: () => cy.get('.results')
     }
 
     // Locator Functions
     set_search_field(text){
         this.visit();
-        this.page_elements.search_bar_field().focus().type(text);
+        this.page_elements.search_bar_field().type(text);
     }
 
     click_search_button(){
@@ -66,6 +67,7 @@ class PokedexPage{
 
     search_pokedex(pokemon_name){
         this.visit();
+        this.page_elements.results_container().find('li').its('length').should('be.gte', 2)
         this.set_search_field(pokemon_name);
         this.click_search_button();
     }

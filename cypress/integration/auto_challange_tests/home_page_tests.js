@@ -4,7 +4,7 @@ import PokedexPage from '../../page_objects/pokedex_page'
 describe('Home Page Tests', () =>{
 
     it('can scroll through highlights', () =>{
-      let pokemon_name = "Minccino";
+      let pokemon_name = "Grimer";
       HomePage.scroll_highlights_until_pokemon(pokemon_name);
       HomePage.page_elements.highlighted_pokemon_by_name(pokemon_name).should('exist')
     });
