@@ -2,8 +2,19 @@ version: 2.1
 orbs:
   # Updated
   cypress: cypress-io/cypress@1
+  node: circleci/node@5.0.1
 workflows:
   build:
     jobs:
       - cypress/run:
           record: true
+      - run:
+          name: Run consumer tests
+          command: npm run test:consumer
+      - run:
+          name: Publish pactflow contract
+          command: npm run publish:pact
+      - run:
+          name: Run provider  tests
+          command: npm run test:provider
+  
