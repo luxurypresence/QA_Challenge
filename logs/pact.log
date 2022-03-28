@@ -1,0 +1,6 @@
+I, [2022-03-27T20:30:26.781344 #35524]  INFO -- : Registered expected interaction GET /todos/1
+I, [2022-03-27T20:30:26.782975 #35524]  INFO -- : Received request GET /todos/1
+I, [2022-03-27T20:30:26.783274 #35524]  INFO -- : Found matching response for GET /todos/1
+I, [2022-03-27T20:30:26.790604 #35524]  INFO -- : Verifying - interactions matched
+I, [2022-03-27T20:30:26.793579 #35524]  INFO -- : Cleared interactions
+I, [2022-03-27T20:30:26.797930 #35524]  INFO -- : Writing pact for sample_api_provider to /Users/chriswilliams/Desktop/auto_challange/QA_Challenge/pacts/sample_todo_consumer-sample_api_provider.json

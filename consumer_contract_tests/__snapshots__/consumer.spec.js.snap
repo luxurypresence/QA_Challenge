@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JsonPlaceholder Sample API When fetch request made to jsonholder todo api should return sample todo items 1`] = `
+Object {
+  "completed": false,
+  "id": 1,
+  "title": "delectus aut autem",
+  "userId": 1,
+}
+`;

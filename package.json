@@ -1,0 +1,32 @@
+{
+  "name": "qa_challenge",
+  "version": "1.0.0",
+  "description": "qa automation challange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "test:consumer": "jest QA_Challenge/consumer_contract_tests/consumer.spec.js",
+    "publish:pact": "pact-broker publish ./pacts --consumer-app-version 1.0 --broker-base-url https://chriswilm.pactflow.io --broker-token 5jxvOt6H-341zt89CgT7-w",
+    "test:provider": "jest QA_Challenge/provider_contract_tests/provider.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AudioLeaf/QA_Challenge.git"
+  },
+  "author": "Chris Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AudioLeaf/QA_Challenge/issues"
+  },
+  "homepage": "https://github.com/AudioLeaf/QA_Challenge#readme",
+  "devDependencies": {
+    "cypress": "^9.5.2"
+  },
+  "dependencies": {
+    "@pact-foundation/pact": "^9.17.3",
+    "axios": "^0.26.1",
+    "cypress-wait-until": "^1.7.2",
+    "jest": "^27.5.1"
+  }
+}

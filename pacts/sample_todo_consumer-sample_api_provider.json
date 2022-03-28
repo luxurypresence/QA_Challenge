@@ -1,0 +1,38 @@
+{
+  "consumer": {
+    "name": "sample_todo_consumer"
+  },
+  "provider": {
+    "name": "sample_api_provider"
+  },
+  "interactions": [
+    {
+      "description": "a get request to json todo api",
+      "request": {
+        "method": "GET",
+        "path": "/todos/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "userId": 1,
+          "id": 1,
+          "title": "delectus aut autem",
+          "completed": false
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
