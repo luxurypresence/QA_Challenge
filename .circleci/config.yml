@@ -8,13 +8,7 @@ workflows:
     jobs:
       - cypress/run:
           record: true
-      - run:
-          name: Run consumer tests
-          command: npm run test:consumer
-      - run:
-          name: Publish pactflow contract
-          command: npm run publish:pact
-      - run:
-          name: Run provider  tests
-          command: npm run test:provider
-  
+steps:
+  - node/test:consumer
+  - node/publish:pact
+  - node/test:provider
