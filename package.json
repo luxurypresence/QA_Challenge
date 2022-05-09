@@ -1,0 +1,23 @@
+{
+  "name": "lp_qa_challenge",
+  "version": "1.0.0",
+  "description": "Project for QA challenge",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitrii126776/lp_qa_challenge.git"
+  },
+  "author": "Dmitrii Kuzhilin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmitrii126776/lp_qa_challenge/issues"
+  },
+  "homepage": "https://github.com/Dmitrii126776/lp_qa_challenge#readme",
+  "devDependencies": {
+    "cypress": "^9.6.0",
+    "cypress-wait-until": "^1.7.2"
+  }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "abilities": [
+      "Contrary",
+      "Suction Cups"
+    ],
+    "detailPageURL": "/us/pokedex/inkay",
+    "weight": 7.7,
+    "weakness": [
+      "Fairy",
+      "Bug"
+    ],
+    "number": "686",
+    "height": 16.0,
+    "collectibles_slug": "inkay",
+    "featured": "true",
+    "slug": "inkay",
+    "name": "Inkay",
+    "ThumbnailAltText": "Inkay",
+    "ThumbnailImage": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/686.png",
+    "id": 686,
+    "type": [
+      "dark",
+      "psychic"
+    ]
+  },
+  {
+    "abilities": [
+      "Contrary",
+      "Suction Cups"
+    ],
+    "detailPageURL": "/us/pokedex/malamar",
+    "weight": 103.6,
+    "weakness": [
+      "Fairy",
+      "Bug"
+    ],
+    "number": "687",
+    "height": 59.0,
+    "collectibles_slug": "malamar",
+    "featured": "true",
+    "slug": "malamar",
+    "name": "Malamar",
+    "ThumbnailAltText": "Malamar",
+    "ThumbnailImage": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/687.png",
+    "id": 687,
+    "type": [
+      "dark",
+      "psychic"
+    ]
+  },
+  {
+    "abilities": [
+      "Sniper",
+      "Tough Claws"
+    ],
+    "detailPageURL": "/us/pokedex/binacle",
+    "weight": 68.3,
+    "weakness": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Ground"
+    ],
+    "number": "688",
+    "height": 20.0,
+    "collectibles_slug": "binacle",
+    "featured": "true",
+    "slug": "binacle",
+    "name": "Binacle",
+    "ThumbnailAltText": "Binacle",
+    "ThumbnailImage": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/688.png",
+    "id": 688,
+    "type": [
+      "rock",
+      "water"
+    ]
+  }
+]
