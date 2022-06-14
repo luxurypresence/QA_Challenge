@@ -1,6 +1,7 @@
 # QA_Challenge
 
 Project for QA challenge 
+<br> Suggested Time: 4 hours 
 
 Suggested Libs and Tools:
 - Cypress
