@@ -1,4 +1,3 @@
-from sre_constants import ASSERT_NOT
 import unittest
 import api_helper
 

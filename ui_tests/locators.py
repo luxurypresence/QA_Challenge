@@ -1,4 +1,3 @@
-from pygments import highlight
 
 
 class Locator(object):
