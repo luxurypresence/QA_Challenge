@@ -5,9 +5,6 @@ it would be better to get them as a package since everytime they get old, you ha
 - I have commited some files that would be local, like enzo_local.json and the drivers for OSX. I have 
 done it intentionally to show how I solve the issue of working locally on a different OS than CI.
 
-- For time constraints and the solution I'm using, you won't get a url to a public report. However, if 
-you follow the command below it will generate an HTML report of each run
-
 - You can check the runs under "Actions" in the repository fork I've made, you'll also see the HTML report there.
 
 
