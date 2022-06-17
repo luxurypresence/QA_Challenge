@@ -1,0 +1,1 @@
+{"production": "https://www.pokemon.com/us/", "chrome": "./drivers/chromedriver_osx", "firefox": "./drivers/geckodriver_osx", "headless": false}

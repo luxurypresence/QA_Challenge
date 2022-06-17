@@ -1,0 +1,1 @@
+{"production": "https://app.synccomputing.com",  "chrome": "./drivers/chromedriver_linux_100", "firefox": "./drivers/geckodriver_linux", "headless": true}
