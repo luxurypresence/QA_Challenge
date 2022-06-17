@@ -1,1 +1,1 @@
-{"production": "https://app.synccomputing.com",  "chrome": "./drivers/chromedriver_linux_100", "firefox": "./drivers/geckodriver_linux", "headless": true}
+{"production": "https://www.pokemon.com/us/",  "chrome": "./drivers/chromedriver_linux_102", "firefox": "./drivers/geckodriver_linux", "headless": true}
