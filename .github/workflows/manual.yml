@@ -1,0 +1,47 @@
+# This workflow will install Python dependencies, run tests
+name: Run Tests
+
+on:  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to test in: (development, staging, production).'
+        required: true
+        default: 'production'
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    env:
+      PYTHON_VERSION: 3.8
+
+    strategy:
+      matrix:
+        BROWSER: [chrome]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install flake8 pytest
+        [[ -f requirements.txt ]] && pip install -r requirements.txt
+    - name: Run Tests
+      run: |
+        pytest --html=report-${{ matrix.BROWSER }}.html
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+       name: report-${{ matrix.BROWSER }}
+       path: | 
+        ./report-${{ matrix.BROWSER }}.html
+        ./assets
+        retention-days: 5
