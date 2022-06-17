@@ -1,3 +1,23 @@
+# Some things to consider
+- The present folder contains the browser drivers in sake of making easier and faster to get the test to run
+it would be better to get them as a package since everytime they get old, you have to manually copy them
+
+- I have commited some files that would be local, like enzo_local.json and the drivers for OSX. I have 
+done it intentionally to show how I solve the issue of working locally on a different OS than CI.
+
+- For time constraints and the solution I'm using, you won't get a url to a public report. However, if 
+you follow the command below it will generate an HTML report of each run
+
+
+# How to run github code tests
+
+under /ui_tests path:
+
+**pytest --html=[report_name] -s**
+
+-s for verbose output
+
+
 # QA_Challenge
 
 Project for QA challenge 
