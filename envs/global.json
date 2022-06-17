@@ -1,1 +1,1 @@
-{"env_file": "enzo_local.json", "browser": "chrome", "environment": "production"}
+{"env_file": "ci_env.json", "browser": "chrome", "environment": "production"}
