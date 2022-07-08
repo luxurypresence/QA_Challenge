@@ -30,9 +30,9 @@ describe('Pokedex UI scenarios', () => {
           })
       })
   })
-  it('scrolls through the Featured Pokemon Gallery Slider and verify Kangaskhan in its highlighted select state', () => {
-    cy.scrollUntilTextDisplayed('Kangaskhan')
-    cy.get('[data-content-id="featured-item"][class*="highlight"]').find('a').should('contain', 'Kangaskhan')
+  it('scrolls through the Featured Pokemon Gallery Slider and verify Golurk in its highlighted select state', () => {
+    cy.scrollUntilTextDisplayed('Golurk')
+    cy.get('[data-content-id="featured-item"][class*="highlight"]').find('a').should('contain', 'Golurk')
   })
   it('should finds Jiggly Puff by selecting "Explore More Pokemon" CTA on the Home Page', () => {
     cy.get('[class="slider-more-button"] a').scrollIntoView().click()
