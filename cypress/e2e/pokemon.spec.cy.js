@@ -1,0 +1,52 @@
+describe('Pokedex UI scenarios', () => {
+  beforeEach(() => {
+    cy.visit('/')
+    cy.get('#onetrust-accept-btn-handler', { timeout: 30000 }).click()
+  })
+  it('should navigates to the Pokedex and Search by Name', () => {
+    cy.get('[href="/us/pokedex/"]').first().click()
+    cy.get('[class="results"] [class="pokemon-info"]').should('be.visible')
+    cy.get('#searchInput').scrollIntoView().type('Alakazam')
+    cy.get('#search').scrollIntoView().click()
+    cy.get('[class="results"] [class="pokemon-info"]')
+      .contains('Alakazam')
+      .scrollIntoView()
+      .should('contain', 'Alakazam')
+  })
+  it('should navigates to the Pokedex and Sort by Highest Number (First)', () => {
+    cy.get('[href="/us/pokedex/"]').first().click()
+    cy.get('[class="results"] [class="pokemon-info"]').should('be.visible')
+    cy.get('[class="pokemon-info"] [class="number-prefix"]')
+      .first()
+      .parent()
+      .then((element) => {
+        cy.get('[class="custom-select-menu"]').eq(1).should('be.visible').click()
+        cy.get('[data-option-value="numberDesc"]').click()
+        cy.get('[class="pokemon-info"] [class="number-prefix"]')
+          .first()
+          .parent()
+          .then((secondElement) => {
+            expect(element[0].textContent).not.contains(secondElement[0].textContent)
+          })
+      })
+  })
+  it('scrolls through the Featured Pokemon Gallery Slider and verify Kangaskhan in its highlighted select state', () => {
+    cy.scrollUntilTextDisplayed('Kangaskhan')
+    cy.get('[data-content-id="featured-item"][class*="highlight"]').find('a').should('contain', 'Kangaskhan')
+  })
+  it('should finds Jiggly Puff by selecting "Explore More Pokemon" CTA on the Home Page', () => {
+    cy.get('[class="slider-more-button"] a').scrollIntoView().click()
+    cy.get('[class="results"] [class="pokemon-info"]').should('be.visible')
+    cy.get('#searchInput').scrollIntoView().type('Jigglypuff')
+    cy.get('#search').scrollIntoView().click()
+    cy.get('[class="results"] [class="pokemon-info"]')
+      .contains('Jigglypuff')
+      .scrollIntoView()
+      .should('contain', 'Jigglypuff')
+  })
+  it('should navigates to search widget and Searches After School', () => {
+    cy.get('[class="search"] a[class*="icon_search"]').click()
+    cy.get('#site-search-widget-term').should('be.visible').type('After School')
+    cy.get('[class="search-result-info-wrapper"]').eq(0).should('contain', 'After School')
+  })
+})
