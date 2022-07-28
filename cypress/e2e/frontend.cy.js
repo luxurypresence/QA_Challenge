@@ -1,6 +1,6 @@
 import { recurse } from 'cypress-recurse'
 
-describe('QA_Challenge - Front End', () => {
+describe('QA_Challenge - UI Automation Test', () => {
   beforeEach(() => {
     cy.visit('/');
     // close popup

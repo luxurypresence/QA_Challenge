@@ -26,12 +26,18 @@
 import 'cypress-mochawesome-reporter/register';
 require('cypress-xpath');
 
+/**
+ * Ignore page failures
+ */
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test
     return false
 })
 
+/**
+ * Force to visit a href
+ */
 Cypress.Commands.add('forceVisit', url => {
   cy.window().then(win => {
       return win.open(url, '_self'); 
