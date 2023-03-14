@@ -1,10 +1,9 @@
 # QA_Challenge
 
 Project for QA challenge 
-<br> Suggested Time: 4 hours 
 
 Suggested Libs and Tools:
-- Cypress
+- Playwright
 - Reporting Tool
 - CI/CD - Circle CI or GitHub Actions
 
@@ -13,28 +12,14 @@ Suggested Libs and Tools:
 
 Open [website](https://www.pokemon.com/us/) and create test script for the following:
 
-Scenario 1 - Navigate to the Pokedex and Search by Name </br>
-Scenario 2 - Navigate to the Pokedex and Sort by Highest Number (First) </br>
-Scenario 3 - From the Home Page, scroll through the Featured Pokemon Gallery Slider and verify Dewott in its highlighted select state </br>
-Scenario 4 - By selecting 'Explore More Pokemon' CTA on the Home Page, find Jiggly Puff in the hover state of the Pokedex </br> 
-Scenario 5 - Create a new scenario that you wish to add </br> 
+Scenario 1 - Navigate to the Pokedex and create an account </br>
+Scenario 2 - Create a new scenario that you wish to add </br> 
 
 ## 🎯 API Automation Test 
 
-Task 1 - Create a scenario and check status code OK </br>
-Task 2 - Create a scenario and check status code Not Found </br>
-Task 3 - Create a scenario and check data results </br>
-Task 4 - Create an scenario that simulate create a new pokemon </br>
-Task 5 - Create an scenario that simulate create a login in a API : check if the create was successfull </br>
-Task 6 - Create an scenario that simulate edit a login in a API : create a new scenario that check if the access was denied </br>
-Task 7 - Create two requests on Pokemon API with two pokemons that you wish to choose, comparer results: 
-         Create a scenario where data result is the same (e.g. power of the pokemon)
-         Create a scenario where data result is not the same  (e.g. name of the pokemon)
-
- 
-## 🎯 Contract Test 
-Task 1 - Create a contract test and check if results was ok</br>
-Task 2 - Create a contract test and check if results was not ok</br>
+Task 1 - Create a scenario and check status code </br>
+Task 2 - Create a scenario and check data results</br>
+Task 3 - Create a new scenario that you wish to add </br>
 
 
 ## :rotating_light: What should the project consist of? 
