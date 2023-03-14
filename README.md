@@ -3,10 +3,9 @@
 Project for QA challenge 
 
 Suggested Libs and Tools:
-- Playwright
+- Appium or Detox
+- Selenium 
 - Reporting Tool
-- CI/CD - Circle CI or GitHub Actions
-
 
 ## 🎯 UI Automation Test
 
