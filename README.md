@@ -3,7 +3,7 @@
 Project for QA challenge 
 
 Suggested Libs and Tools:
-- Appium or Detox
+
 - Selenium 
 - Reporting Tool
 
