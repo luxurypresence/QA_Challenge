@@ -2,9 +2,9 @@
 
 Project for QA challenge 
 
-Suggested Libs and Tools:
+Libs and Tools:
 
-- Selenium 
+- Any automation tool (Selenium / Playwright / Cypress)
 - Reporting Tool
 
 ## 🎯 UI Automation Test
@@ -24,7 +24,7 @@ Task 3 - Create a new scenario that you wish to add </br>
 ## :rotating_light: What should the project consist of? 
 
 - The project should be configurable to CI/CD </br>
-- In the final run of all tests, a collective summary of results is found on the Reporting Dashboard </br>
+- In the final run of all tests, a collective summary of results on a Reporting Dashboard </br>
 
 
 ## :rotating_light: Steps for QA
@@ -33,4 +33,4 @@ The candidate will need to:
 1. Fork the project </br>
 2. Commit their updates to their fork </br>
 3. Send a PR for this repository (including .yml file) </br>
-4. Include a link to Public Reporting Tool (Cypress Dashboard preferred)
+4. Include a link to Public Reporting Tool
