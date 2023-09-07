@@ -1,4 +1,4 @@
-describe('Luxury Presence QA Challenge', () => {
+describe('Luxury Presence QA Challenge - Pokemon', () => {
   beforeEach(() => {
     cy.openPokemonWebsite();
   });

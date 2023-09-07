@@ -1,4 +1,8 @@
-import { HomePage, LoginPage, RegisterPage } from '../pages/index';
+import {
+  PokemonHomePage,
+  PokemonLoginPage,
+  PokemonRegisterPage,
+} from '../pages/index';
 import generateRandomEmail from '../helpers/generateRandomEmail';
 import generateRandomNumber from '../helpers/generateRandomNumber';
 
@@ -6,19 +10,19 @@ Cypress.Commands.add('createNewAccount', () => {
   let randomUsername = `username_${generateRandomNumber(4)}`;
   let randomEmail = generateRandomEmail('test@fakemail.com');
 
-  HomePage.loginTab.click();
-  LoginPage.createAnAccountButton.click();
-  RegisterPage.dateOfBirthField.click();
+  PokemonHomePage.loginTab.click();
+  PokemonLoginPage.createAnAccountButton.click();
+  PokemonRegisterPage.dateOfBirthField.click();
   cy.selectDate('1988', 'September', '20');
-  RegisterPage.continueButton.click();
-  RegisterPage.usernameField.type(randomUsername);
-  RegisterPage.passwordField.type('testPassword123!');
-  RegisterPage.confirmPasswordField.type('testPassword123!');
-  RegisterPage.emailAddressField.type(`${randomEmail}`);
-  RegisterPage.confirmEmailAddressField.type(`${randomEmail}`);
-  RegisterPage.optOutPublicProfileRadioButton.click();
-  RegisterPage.termsCheckbox.click();
-  RegisterPage.continueToVerifyEmailButton.click();
+  PokemonRegisterPage.continueButton.click();
+  PokemonRegisterPage.usernameField.type(randomUsername);
+  PokemonRegisterPage.passwordField.type('testPassword123!');
+  PokemonRegisterPage.confirmPasswordField.type('testPassword123!');
+  PokemonRegisterPage.emailAddressField.type(`${randomEmail}`);
+  PokemonRegisterPage.confirmEmailAddressField.type(`${randomEmail}`);
+  PokemonRegisterPage.optOutPublicProfileRadioButton.click();
+  PokemonRegisterPage.termsCheckbox.click();
+  PokemonRegisterPage.continueToVerifyEmailButton.click();
   cy.clickRecaptcha();
 });
 
