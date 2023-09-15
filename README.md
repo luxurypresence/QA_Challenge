@@ -4,7 +4,8 @@ Project for QA challenge
 
 Libs and Tools:
 
-- Any automation tool (Selenium / Playwright / Cypress)
+- Any browser automation tool (Selenium / Playwright / Cypress)
+- Any API automation tool (RestAssured / Playwright / Cypress)
 - Reporting Tool
 
 ## 🎯 UI Automation Test
@@ -15,6 +16,8 @@ Scenario 1 - Navigate to the Pokedex and create an account </br>
 Scenario 2 - Create a new scenario that you wish to add </br> 
 
 ## 🎯 API Automation Test 
+
+Using [this Pokemon API](https://pokeapi.co/), create tests for the following scenarios:
 
 Task 1 - Create a scenario and check the status code </br>
 Task 2 - Create a scenario and check data results</br>
