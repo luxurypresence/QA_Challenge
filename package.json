@@ -4,7 +4,9 @@
   "description": "QA test by Miguel Peceros for Luxury",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:install": "cypress install",
+    "cy:run": "cypress run"
   },
   "author": "Miguel Peceros",
   "license": "ISC",
