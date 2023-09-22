@@ -1,6 +1,12 @@
 # QA Challenge
 
-Project for QA challenge 
+Project for QA challenge
+
+Notes:
+
+- Githubactions shares the report of the test run in Summary, just download and open the html file4
+![Alt text](image-1.png)
+![Alt text](image.png)
 
 Libs and Tools:
 
