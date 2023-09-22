@@ -3,7 +3,6 @@
 class PokemonTrainerClubPage {
   constructor() {
     this.datePicker = "#id_dob";
-    this.datePicker = "#id_dob";
     this.countrySelect = "#id_country";
     this.continueBtn = ".continue-button";
 

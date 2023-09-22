@@ -4,7 +4,7 @@ import CommonPage from "./CommonPage";
 
 class HomePage extends CommonPage {
   constructor() {
-    super()
+    super();
     this.menu = '[data-analytics-label="primary-nav"]';
     this.aceptCookies = "#onetrust-accept-btn-handler";
     this.articles = ".title-image-wrapper";
@@ -19,19 +19,19 @@ class HomePage extends CommonPage {
   }
 
   goToPokedexTab() {
-    cy.get(this.menu).find('.explore').click()
+    cy.get(this.menu).find(".explore").click();
   }
 
   goToVideogamesTab() {
-    cy.get(this.menu).find('.watch').click()
+    cy.get(this.menu).find(".watch").click();
   }
 
   goToTradingCardsTab() {
-    cy.get(this.menu).find('.play').click()
+    cy.get(this.menu).find(".play").click();
   }
 
   goToPokemonTV() {
-    cy.get(this.menu).find('.attend').click()
+    cy.get(this.menu).find(".attend").click();
   }
 }
 export default HomePage;

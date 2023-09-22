@@ -32,7 +32,7 @@ describe("Accounts", () => {
   it("Search Pokemon", () => {
     const pokemon = "Pikachu";
     homePage.goToPokedexTab();
-    pokedexPage.searchPokemon(pokemon)
-    pokedexPage.validatePokemonFound(pokemon)
+    pokedexPage.searchPokemon(pokemon);
+    pokedexPage.validatePokemonFound(pokemon);
   });
 });
