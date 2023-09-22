@@ -15,12 +15,7 @@ var day = ".picker__day";
 
 describe("Accounts", () => {
   beforeEach(() => {
-    cy.visit("/", {
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "User-Agent": "axios/0.18.0",
-      },
-    });
+    cy.visit("/");
     cy.get(aceeptCookies).click();
   });
 

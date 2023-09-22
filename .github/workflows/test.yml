@@ -7,16 +7,24 @@ jobs:
   cypress:
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 16
+
       - name: Install Dependencies
         run: npm install
+
       - name: Run Cypress Tests
-        run: npm run cy:run
+        uses: cypress-io/github-action@v4
+        with:
+          command: npx cypress run
+          browser: chrome
+
       - name: Cypress tests report
         uses: actions/upload-artifact@v3
         if: always()
@@ -24,3 +32,4 @@ jobs:
           name: cypress-reports
           path: |
             cypress/reports/
+          

@@ -7,13 +7,8 @@ class CommonPage {
     cy.contains("Log In").click({ force: true });
   }
 
-  visitHomePage(){
-    cy.visit("/", {
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "User-Agent": "axios/0.18.0",
-      },
-    });
+  visitHomePage() {
+    cy.visit("/");
   }
 }
 
