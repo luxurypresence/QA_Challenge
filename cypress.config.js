@@ -5,7 +5,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://www.pokemon.com/us",
     chromeWebSecurity: false,
-    defaultCommandTimeout: 20000,
+    defaultCommandTimeout: 10000,
     setupNodeEvents(on, config) {
       require("cypress-mochawesome-reporter/plugin")(on);
     },
