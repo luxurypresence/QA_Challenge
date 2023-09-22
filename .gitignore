@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+.env
+.vscode
+
+# testing
+downloads
+reports
+jsonlogs
+videos
+screenshots

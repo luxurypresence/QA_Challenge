@@ -1,0 +1,17 @@
+{
+  "name": "miguelpecerosluxury",
+  "version": "1.0.0",
+  "description": "QA test by Miguel Peceros for Luxury",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Peceros",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.2.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.6.0"
+  }
+}
