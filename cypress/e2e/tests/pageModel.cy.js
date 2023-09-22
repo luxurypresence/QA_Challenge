@@ -5,14 +5,14 @@ import LoginPage from "../../support/pages/LoginPage";
 import PokemonTrainerClubPage from "../../support/pages/PokemonTrainerClubPage";
 import PokedexPage from "../../support/pages/PokedexPage";
 
-const homePage = new HomePage
+const homePage = new HomePage();
 const loginPage = new LoginPage();
 const pTrainerClubPage = new PokemonTrainerClubPage();
 const pokedexPage = new PokedexPage();
 
 describe("Accounts", () => {
   beforeEach(() => {
-    cy.visit("/");
+    homePage.visitHomePage();
     homePage.acceptCookies();
   });
 
