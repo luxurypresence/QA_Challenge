@@ -6,7 +6,7 @@ class HomePage extends CommonPage {
   constructor() {
     super();
     this.menu = '[data-analytics-label="primary-nav"]';
-    this.aceptCookies = "#onetrust-reject-all-handler";
+    this.aceptCookies = "#onetrust-accept-btn-handler";
     this.articles = ".title-image-wrapper";
   }
 

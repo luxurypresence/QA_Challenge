@@ -3,10 +3,13 @@
 class PokedexPage {
   constructor() {
     this.searchInput = "#searchInput";
+    this.searchBtn = "#search";
   }
 
   searchPokemon(pokemon) {
-    cy.get(this.searchInput).type(pokemon);
+    cy.get(this.searchInput).should('be.enabled');
+    cy.get(this.searchInput).type(pokemon); //flaky
+    cy.get(this.searchBtn).click();
   }
 
   validatePokemonFound(pokemon) {

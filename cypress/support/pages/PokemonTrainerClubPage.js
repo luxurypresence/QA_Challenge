@@ -22,14 +22,6 @@ class PokemonTrainerClubPage {
     const d = date.split("/")[1];
     const y = date.split("/")[2];
 
-    //TODO
-    cy.visit("https://club.pokemon.com/us/pokemon-trainer-club/sign-up/", {
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "User-Agent": "axios/0.27.2",
-      },
-    });
-
     cy.get(this.datePicker).click();
 
     cy.get(this.month).parent().click();

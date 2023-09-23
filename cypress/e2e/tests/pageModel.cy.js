@@ -12,6 +12,9 @@ const pokedexPage = new PokedexPage();
 
 describe("Accounts", () => {
   beforeEach(() => {
+    cy.on("uncaught:exception", () => {
+      return false;
+    });
     homePage.visitHomePage();
     homePage.acceptCookies();
   });

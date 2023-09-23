@@ -4,6 +4,7 @@ var menu = '[data-analytics-label="primary-nav"]';
 var aceeptCookies = "#onetrust-accept-btn-handler";
 var createAcct = "#user-account-signup";
 var searchInput = "#searchInput";
+var searchBtn = "#search";
 
 var datePicker = "#id_dob";
 var countrySelect = "#id_country";
@@ -15,6 +16,9 @@ var day = ".picker__day";
 
 describe("Accounts", () => {
   beforeEach(() => {
+    cy.on("uncaught:exception", () => {
+      return false;
+    });
     cy.visit("/");
     cy.get(aceeptCookies).click();
   });
@@ -36,7 +40,9 @@ describe("Accounts", () => {
   it("Search Pokemon", () => {
     const pokemon = "Pikachu";
     cy.get(menu).find(".explore").click();
-    cy.get(searchInput).type(pokemon);
+    cy.get(searchInput).should('be.enabled');
+    cy.get(searchInput).type(pokemon); //flaky
+    cy.get(searchBtn).click();
     cy.get("li").contains(pokemon).should("be.visible").and("have.length", 1);
   });
 
